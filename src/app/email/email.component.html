@@ -1,0 +1,13 @@
+<div class="container">
+
+          <div *ngIf="error"><p>{{error}}</p></div>
+          <form  class='form-group main'#formData='ngForm' (ngSubmit)="onSubmit(formData)">
+            <h4>Chatify</h4>
+            <input class="form-control" type="text" placeholder="Email" (ngModel)="email" name="email" required >
+            <input class="form-control" type="password" placeholder="Password" (ngModel)= "password" name="password" required>
+            <br>
+            <button class="form-control btn" type="submit" >Sign In</button>
+            <a routerLink="/signup">Sign Up?</a>
+          </form>
+          
+</div>

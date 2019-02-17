@@ -1,0 +1,30 @@
+<!-- <button class="bt btn-primary" (click)="logout()">Log-out</button>
+<button class="bt btn-primary" (click)="clearChat()">ClearChat</button> -->
+<div class="profile">
+  <h1>{{name}}</h1>
+  <button (click)="logout()">Log-out</button>
+  <h4>Chat List:-</h4>
+  <div *ngFor='let chats of list | async'>
+    <p>{{chats.name}}</p>
+  </div>
+
+</div>
+
+<div class="black">
+  
+    <!-- <h4>{{name}}</h4> -->
+    <!-- <button class="btn btn-primary" (click)="signInWithFacebook()" *ngIf="!name">Login with Facebook</button> -->
+
+    <div *ngFor='let chat of items | async '>
+      <div class="width" [ngStyle]="{'text-align': chat.name===name? 'right':'left' }">
+          <div [ngClass]="{'myChat': (chat.name=== name), 'chat':(chat.name!= name)}">
+              <p><strong>{{chat.name}}</strong></p>
+              <p>{{chat.message}}</p>
+          </div>
+      </div>
+       
+        
+    </div>
+  </div>
+  <input class="bottom" type="text"  placeholder="Chat" (keyup.enter)="chatSend($event.target.value)" 
+  [(ngModel)] ="msgVal"/>

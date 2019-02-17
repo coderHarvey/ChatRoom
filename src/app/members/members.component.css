@@ -1,0 +1,65 @@
+.chat{
+    background-color: rgb(238, 238, 238);
+    padding: 3vh;
+    color: rgb(68, 68, 68);
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 10px rgb(19, 19, 19);
+    max-width: 400px;
+    margin-left:20px; 
+    margin-top: 20px;
+
+}
+.profile{
+    padding: 10px;
+    color: white;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 20%;
+    background: #fa3e3ed3;
+}
+.width{
+    width: 100%;
+    text-align: right;
+}
+.myChat{
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left:auto; margin-right:20px;
+    background-color: #fa3f3e;
+    padding: 3vh;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 10px rgb(19, 19, 19);
+}
+.black{
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    overflow: visible;
+    width: 80%;
+}
+
+.margin{
+    margin:20px 0px 30px 0px;
+}
+strong{
+    /* font-size: 15px; */
+    margin-bottom: 5px;
+    color: #14264e;
+}
+p{
+    margin: 0%;
+    padding: 0%;
+}
+.bottom{
+    padding: 0 10px;
+    height: 50px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:0;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
